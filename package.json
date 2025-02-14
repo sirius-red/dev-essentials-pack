@@ -1,0 +1,85 @@
+{
+    "name": "dev-essentials-pack",
+    "displayName": "Dev Essentials Pack",
+    "description": "A collection of essential extensions for developers that I use in all my VSCode profiles.",
+    "publisher": "SiriusRed",
+    "version": "1.0.0",
+    "icon": "assets/icon_128.png",
+    "license": "MIT",
+    "author": {
+        "name": "Sirius Red",
+        "url": "https://github.com/sirius-red"
+    },
+    "homepage": "https://github.com/sirius-red/dev-essentials-pack",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sirius-red/dev-essentials-pack"
+    },
+    "bugs": {
+        "url": "https://github.com/sirius-red/dev-essentials-pack/issues"
+    },
+    "scripts": {
+        "ext:setup": "pnpm install && vsce login SiriusRed",
+        "ext:release": "node scripts/release.js",
+        "ext:publish": "vsce publish",
+        "fmt": "prettier --write **/*.{js,json,md}"
+    },
+    "type": "module",
+    "engines": {
+        "vscode": "^1.97.0"
+    },
+    "categories": [
+        "Extension Packs"
+    ],
+    "extensionPack": [
+        "adpyke.codesnap",
+        "bierner.markdown-preview-github-styles",
+        "christian-kohler.path-intellisense",
+        "daltonmenezes.aura-theme",
+        "davidanson.vscode-markdownlint",
+        "dotenv.dotenv-vscode",
+        "eamodio.gitlens",
+        "editorconfig.editorconfig",
+        "esbenp.prettier-vscode",
+        "exiasr.hadolint",
+        "foxundermoon.shell-format",
+        "github.codespaces",
+        "harrydowning.yaml-embedded-languages",
+        "humao.rest-client",
+        "intellsmi.comment-translate",
+        "ionutvmi.reg",
+        "jeff-hykin.better-dockerfile-syntax",
+        "mamacarlos.envautoexample",
+        "mkhl.direnv",
+        "monish.regexsnippets",
+        "ms-azuretools.vscode-docker",
+        "ms-vscode-remote.remote-wsl",
+        "ms-vscode.makefile-tools",
+        "mtxr.sqltools",
+        "ndonfris.fish-lsp",
+        "pedrohenrique-ql.regex-match",
+        "redhat.vscode-xml",
+        "redhat.vscode-yaml",
+        "shinotatwu-ds.file-tree-generator",
+        "streetsidesoftware.code-spell-checker",
+        "streetsidesoftware.code-spell-checker-portuguese-brazilian",
+        "tamasfe.even-better-toml",
+        "tanhakabir.rest-book",
+        "yzhang.markdown-all-in-one"
+    ],
+    "devDependencies": {
+        "@eslint/js": "^9.20.0",
+        "@vscode/vsce": "^3.2.2",
+        "eslint": "^9.20.1",
+        "eslint-config-prettier": "^10.0.1",
+        "globals": "^15.15.0",
+        "prettier": "^3.5.0",
+        "prompt-sync": "^4.2.0"
+    },
+    "pnpm": {
+        "onlyBuiltDependencies": [
+            "@vscode/vsce-sign",
+            "keytar"
+        ]
+    }
+}
