@@ -1,7 +1,6 @@
 {
     "recommendations": [
         "adpyke.codesnap",
-        "daltonmenezes.aura-theme",
         "dotenv.dotenv-vscode",
         "eamodio.gitlens",
         "editorconfig.editorconfig",
@@ -11,7 +10,6 @@
         "mkhl.direnv",
         "ms-azuretools.vscode-docker",
         "shinotatwu-ds.file-tree-generator",
-        "streetsidesoftware.code-spell-checker-portuguese-brazilian",
         "streetsidesoftware.code-spell-checker",
         "tamasfe.even-better-toml",
         "exiasr.hadolint",
@@ -32,7 +30,11 @@
         "ms-vscode.makefile-tools",
         "ionutvmi.reg",
         "foxundermoon.shell-format",
-        "pedrohenrique-ql.regex-match",
-        "monish.regexsnippets"
+        "streetsidesoftware.code-spell-checker-cspell-bundled-dictionaries",
+        "visualstudioexptteam.vscodeintellicode",
+        "visualstudioexptteam.intellicode-api-usage-examples",
+        "ms-vscode.powershell",
+        "monish.regexsnippets",
+        "tetradresearch.vscode-h2o"
     ]
 }
