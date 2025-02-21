@@ -21,6 +21,8 @@
     "scripts": {
         "ext:setup": "pnpm install && vsce login SiriusRed",
         "ext:release": "node scripts/release.js",
+        "ext:update": "node scripts/release.js --update-only",
+        "ext:package": "vsce package",
         "ext:publish": "vsce publish",
         "fmt": "prettier --write **/*.{js,json,md}"
     },

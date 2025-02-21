@@ -406,13 +406,16 @@ function publish(data) {
 /**
  * Makes a release from the extension files
  *
- * @param {ExtensionPackData} data - The data of the extension pack
+ * @param {boolean} [updateOnly = false] - If true, only the package.json will be updated, without commit any file.
  */
-function makeRelease() {
+function makeRelease(updateOnly = false) {
     try {
         const extensionFiles = ['.vscode/extensions.json', 'package.json', 'assets/icon_128.png', 'README.md'];
-        const projectFiles = getProjectFiles(extensionFiles);
         const data = getExtensionPackData(extensionFiles);
+        
+        if (updateOnly) return updateExtensionPack(data);
+        
+        const projectFiles = getProjectFiles(extensionFiles);
 
         commitProjectFiles(projectFiles);
         updateExtensionPack(data);
@@ -423,4 +426,8 @@ function makeRelease() {
     }
 }
 
-if (isMainModule(import.meta.url)) makeRelease();
+if (isMainModule(import.meta.url)) {
+    const args = process.argv.slice(2)
+    const updateOnly = args.includes('--update-only')
+    makeRelease(updateOnly);
+}
