@@ -35,6 +35,17 @@
         "visualstudioexptteam.intellicode-api-usage-examples",
         "ms-vscode.powershell",
         "monish.regexsnippets",
-        "tetradresearch.vscode-h2o"
+        "tetradresearch.vscode-h2o",
+        "uvkush.all-code-one-file",
+        "ms-vscode.cmake-tools",
+        "rechinformatica.rech-editor-batch",
+        "timonwong.shellcheck",
+        "rogalmic.bash-debug",
+        "mads-hartmann.bash-ide-vscode",
+        "remisa.shellman",
+        "xshrim.txt-syntax",
+        "jeff-hykin.better-shellscript-syntax",
+        "meronz.manpages",
+        "ms-cst-e.vscode-devskim"
     ]
 }
